@@ -1,0 +1,8 @@
+steps typescript installation:-\
+
+
+1. npm init -y (Initialize Node.js project)
+
+2. npm install -D typescript ts-node @types/node (Install TypeScript + Node types)
+
+3. npx tsc --init (tsconfig.json)
