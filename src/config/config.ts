@@ -4,6 +4,7 @@ conf();
 
 const _config = {
   port: process.env.PORT,
+  database_url: process.env.MONGO_CONNECTION_STRING,
   apikey: process.env.API_KEY
 };
 
