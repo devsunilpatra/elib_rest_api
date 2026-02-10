@@ -1,5 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import createHttpError from "http-errors";
+import bcrypt from "bcrypt"
+import userModel from "./userModel";
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {
   // validation
@@ -11,9 +13,21 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
 
     return next(error);
   }
-   // Database Calls
-   // Process
-   // Response
+  // Database Calls
+
+  const user = await userModel.findOne({ email: email });
+
+  if (user) {
+    const error = createHttpError(400, "User already exists");
+
+    return next(error);
+  }
+
+
+  const hashedPassword = await bcrypt.hash(password, 10)
+
+  // Process
+  // Response
 
   res.json({ msg: "User created" });
 };
