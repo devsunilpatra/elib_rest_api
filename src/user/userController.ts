@@ -11,9 +11,9 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
 
     return next(error);
   }
-
-  // Process
-  // Response
+   // Database Calls
+   // Process
+   // Response
 
   res.json({ msg: "User created" });
 };
