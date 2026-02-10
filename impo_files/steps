@@ -2,11 +2,13 @@
 
 Step-1
 
-i - First install all the basic 
+1- First install all the basic 
 
-ii - Make setup for basic server 
+2 - Make setup for basic server 
 
-iii - Make setup for config for application
+3 - Make setup for config for application
 
-iv - Make setup for Database
+4 - Make setup for Database
+
+5 - Make setup for global error handler
 
