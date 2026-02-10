@@ -12,3 +12,8 @@ Step-1
 
 5 - Make setup for global error handler
 
+6- Make setup for user(User Router, User Controller)
+
+   i -  Validation of clients requests
+   ii-  Process
+   iii- Response
